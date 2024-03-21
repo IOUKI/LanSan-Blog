@@ -1,5 +1,6 @@
 import React from 'react'
 import { Metadata } from 'next'
+import ScreenLoading from '@/components/ScreenLoading'
 
 export const metadata: Metadata = {
   title: "Home Page"

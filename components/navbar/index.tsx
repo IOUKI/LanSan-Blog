@@ -69,7 +69,7 @@ const Navbar = () => {
   }
 
   return (
-    <header className={`${scrollDown && windowWidth > 768 ? 'top-[-100px]' : 'top-0'} fixed flex flex-wrap md:justify-start md:flex-nowrap z-50 w-full bg-white text-sm py-3 md:py-0 dark:bg-gray-800 duration-300 shadow`}>
+    <header className={`${scrollDown && windowWidth > 768 ? 'top-[-100px]' : 'top-0'} fixed flex flex-wrap md:justify-start md:flex-nowrap z-20 w-full bg-white text-sm py-3 md:py-0 dark:bg-gray-800 duration-300 shadow`}>
       <nav className="max-w-[85rem] w-full mx-auto px-4 md:px-6 lg:px-8" aria-label="Global">
         <div className="relative md:flex md:items-center md:justify-between">
           <div className="flex items-center justify-between">
