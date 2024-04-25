@@ -4,7 +4,7 @@ import ScreenLoading from '@/components/ScreenLoading'
 
 export const metadata: Metadata = {
   title: "Home Page"
-};
+}
 
 const Home = () => {
   return (
