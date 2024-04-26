@@ -11,17 +11,22 @@ const Navbar = () => {
   const [scrollTop, setScrollTop] = useState(0)
   const [scrollDown, setScrollDown] = useState(false)
   const [windowWidth, setWindowWidth] = useState(0)
+  const [onTop, setOnTop] = useState(true)
 
+  // 滾動監聽
   const handleScroll = () => {
     const scrollTop = window.scrollY
     setScrollTop(scrollTop)
+    setOnTop(scrollTop <= 0)
   }
 
+  // 視窗寬度變化監聽
   const windowResizeHandle = () => {
     const windowWidth = window.innerWidth
     setWindowWidth(windowWidth)
   }
 
+  // 滑鼠移動監聽
   const mousemoveTopHandle = (event: any) => {
     // 取得滑鼠相對於視窗頂部的垂直位置
     const mouseY = event.clientY;
@@ -69,7 +74,7 @@ const Navbar = () => {
   }
 
   return (
-    <header className={`${scrollDown && windowWidth > 768 ? 'top-[-100px]' : 'top-0'} fixed flex flex-wrap md:justify-start md:flex-nowrap z-20 w-full bg-white text-sm py-3 md:py-0 dark:bg-gray-800 duration-300 shadow`}>
+    <header className={`${scrollDown && windowWidth > 768 ? 'top-[0px]' : 'top-0'} ${onTop ? 'bg-none' : 'bg-white dark:bg-gray-800'} fixed flex flex-wrap md:justify-start md:flex-nowrap z-20 w-full text-sm py-3 md:py-0 duration-300 shadow`}>
       <nav className="max-w-[85rem] w-full mx-auto px-4 md:px-6 lg:px-8" aria-label="Global">
         <div className="relative md:flex md:items-center md:justify-between">
           <div className="flex items-center justify-between">

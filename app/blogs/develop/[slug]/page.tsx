@@ -35,7 +35,7 @@ export default function Page({ params }: any) {
   return (
     <div className="min-h-screen">
       <div className="flex justify-center mb-4">
-        <h1 className="text-5xl font-bold">{props.fontMatter.title}</h1>
+        <h1 className="text-4xl font-bold">{props.fontMatter.title}</h1>
       </div>
       <div className="rounded-xl overflow-hidden mb-4">
         <img className="w-full h-[30rem] object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl" src={"/blogImages/" + props.fontMatter.image} alt="Image Description" />
