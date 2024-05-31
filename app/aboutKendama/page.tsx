@@ -1,8 +1,11 @@
 import React from 'react'
+import ContentCreating from '@/components/contentCreating'
 
 const AboutKendama = () => {
   return (
-    <div>AboutKendama</div>
+    <>
+      <ContentCreating />
+    </>
   )
 }
 
