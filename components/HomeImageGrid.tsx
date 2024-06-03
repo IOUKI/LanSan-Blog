@@ -1,39 +1,10 @@
-'use client'
+"use client";
+import React, { useState, useRef, useEffect } from "react";
+import { LayoutGrid } from "../components/aceternity-ui/layout-grid";
 
-import React from 'react'
-import { Metadata } from 'next'
-import ContentCreating from '@/components/contentCreating'
-import { LayoutGrid } from '@/components/aceternity-ui/layout-grid'
-import { TextGenerateEffect } from '@/components/aceternity-ui/text-generate-effect'
-
-const selfIntro = "大家好， 我是Lan(也可以叫水藍)， 一位全端工程師， 對電腦科學充滿無限熱情。 從前端到後端， 我都樂於挑戰新技術， 追求技術的精進與創新。 在閒暇時， 我熱愛玩劍玉， 這不僅是我休閒放鬆的方式， 也讓我學會了專注和耐心。 透過這個部落格， 我期待與大家分享我的專業知識、 學習心得， 以及生活中的小趣事。 希望您喜歡我的分享， 一起探索科技與生活的美好！"
-
-const Home = () => {
+export default function LayoutGridDemo() {
   return (
-    <div className="w-full min-h-screen overflow-hidden">
-      <section className="w-full flex justify-center">
-        <div className="lg:flex lg:items-center">
-          <div className="flex justify-center">
-            <div className="w-72 h-72 rounded-full overflow-hidden">
-              <img className="w-[110%] h-[110%] hover:w-[130%] hover:h-[130%] object-cover duration-500" src="/homeImages/mugShot.jpg" alt="mug shot" />
-            </div>
-          </div>
-        </div>
-      </section>
-      <section className="px-10">
-        <TextGenerateEffect words={selfIntro} className="mt-10" />
-      </section>
-      <LayoutGridDemo />
-      <ContentCreating />
-    </div>
-  )
-}
-
-export default Home
-
-function LayoutGridDemo() {
-  return (
-    <div className="h-screen py-10 w-full">
+    <div className="h-screen py-20 w-full">
       <LayoutGrid cards={cards} />
     </div>
   );
@@ -96,27 +67,27 @@ const cards = [
     content: <SkeletonOne />,
     className: "md:col-span-2",
     thumbnail:
-      "/homeImages/Itsuku-shima.jpg",
+      "https://images.unsplash.com/photo-1476231682828-37e571bc172f?q=80&w=3474&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     id: 2,
     content: <SkeletonTwo />,
     className: "col-span-1",
     thumbnail:
-      "/homeImages/kwc2023.jpg",
+      "https://images.unsplash.com/photo-1464457312035-3d7d0e0c058e?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     id: 3,
     content: <SkeletonThree />,
     className: "col-span-1",
     thumbnail:
-      "/homeImages/jp-taxi.jpg",
+      "https://images.unsplash.com/photo-1588880331179-bc9b93a8cb5e?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     id: 4,
     content: <SkeletonFour />,
     className: "md:col-span-2",
     thumbnail:
-      "/homeImages/drunk_water.jpg",
+      "https://images.unsplash.com/photo-1475070929565-c985b496cb9f?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
 ];
