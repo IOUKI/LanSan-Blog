@@ -1,8 +1,6 @@
 'use client'
 
 import React from 'react'
-import { Metadata } from 'next'
-import ContentCreating from '@/components/contentCreating'
 import { LayoutGrid } from '@/components/aceternity-ui/layout-grid'
 import { TextGenerateEffect } from '@/components/aceternity-ui/text-generate-effect'
 
