@@ -2,11 +2,11 @@
 
 import React from 'react'
 
-export default function ({
+const Layout: any = ({
   children
 }: {
   children: React.ReactNode
-}) {
+}) => {
   return (
     <section className="w-full mb-4">
       <div className="w-full flex justify-start">
@@ -24,3 +24,5 @@ export default function ({
     </section>
   )
 }
+
+export default Layout

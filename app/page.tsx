@@ -4,7 +4,7 @@ import React from 'react'
 import { LayoutGrid } from '@/components/aceternity-ui/layout-grid'
 import { TextGenerateEffect } from '@/components/aceternity-ui/text-generate-effect'
 
-const selfIntro = "大家好， 我是Lan(也可以叫水藍)， 一位全端工程師， 對電腦科學充滿無限熱情。 從前端到後端， 我都樂於挑戰新技術， 追求技術的精進與創新。 在閒暇時， 我熱愛玩劍玉， 這不僅是我休閒放鬆的方式， 也讓我學會了專注和耐心。 透過這個部落格， 我期待與大家分享我的專業知識、 學習心得， 以及生活中的小趣事。 希望您喜歡我的分享， 一起探索科技與生活的美好！"
+const selfIntro = "大家好， 我是Lan(也可以叫水藍)， 一位全端工程師， 對軟體技術充滿無限熱情。 從前端到後端， 我都樂於挑戰新技術， 追求技術的精進與創新。 在閒暇時， 我熱愛玩劍玉， 這不僅是我休閒放鬆的方式， 也讓我學會了專注和耐心。 透過這個部落格， 我期待與大家分享我的專業知識、 學習心得， 以及生活中的小趣事。 希望您喜歡我的分享， 一起探索科技與生活的美好！"
 
 const Home = () => {
   return (
@@ -13,7 +13,7 @@ const Home = () => {
         <div className="lg:flex lg:items-center">
           <div className="flex justify-center">
             <div className="w-72 h-72 rounded-full overflow-hidden">
-              <img className="w-[110%] h-[110%] hover:w-[130%] hover:h-[130%] object-cover duration-500" src="./homeImages/mugShot.jpg" alt="mug shot" />
+              <img className="w-[110%] h-[110%] hover:w-[130%] hover:h-[130%] object-cover duration-500" src="/homeImages/mugShot.jpg" alt="mug shot" />
             </div>
           </div>
         </div>
@@ -87,24 +87,24 @@ const cards = [
     id: 1,
     content: <SkeletonOne />,
     className: "md:col-span-2",
-    thumbnail: "./homeImages/Itsuku-shima.jpg",
+    thumbnail: "/homeImages/Itsuku-shima.jpg",
   },
   {
     id: 2,
     content: <SkeletonTwo />,
     className: "col-span-1",
-    thumbnail: "./homeImages/kwc2023.jpg",
+    thumbnail: "/homeImages/kwc2023.jpg",
   },
   {
     id: 3,
     content: <SkeletonThree />,
     className: "col-span-1",
-    thumbnail: "./homeImages/taiwan-east-coast-night.jpg",
+    thumbnail: "/homeImages/taiwan-east-coast-night.jpg",
   },
   {
     id: 4,
     content: <SkeletonFour />,
     className: "md:col-span-2",
-    thumbnail: "./homeImages/taiwan-east-coast.jpg",
+    thumbnail: "/homeImages/taiwan-east-coast.jpg",
   },
 ];
