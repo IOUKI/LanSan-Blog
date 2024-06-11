@@ -38,7 +38,7 @@ export default function Page({ params }: any) {
         <h1 className="text-4xl font-bold">{props.fontMatter.title}</h1>
       </div>
       <div className="rounded-xl overflow-hidden mb-4">
-        <img className="w-full h-[30rem] object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl" src={"/blogImages/" + props.fontMatter.image} alt="Image Description" />
+        <img className="w-full h-[30rem] object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl" src={"./blogImages/" + props.fontMatter.image} alt="Image Description" />
       </div>
       <article className='prose prose-sm md:prose-base lg:prose-lg prose-slate !prose-invert prose-headings:text-black prose-p:text-black prose-a:text-black prose-blockquote:text-black prose-ul:text-black prose-li:text-black prose-pre:bg-gray-950 dark:prose-headings:text-white dark:prose-p:text-white dark:prose-a:text-white dark:prose-blockquote:text-white dark:prose-ul:text-white dark:prose-li:text-white'>
         <MDXRemote source={props.content} ></MDXRemote>

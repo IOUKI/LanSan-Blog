@@ -32,10 +32,10 @@ const Blog = () => {
       <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
 
         {blogs.map(blog => (
-          <Link href={'/blogs/develop/' + blog.slug} passHref key={blog.slug} className="group dark:focus:outline-none">
+          <Link href={'./blogs/develop/' + blog.slug} passHref key={blog.slug} className="group dark:focus:outline-none">
 
             <div className="relative pt-[50%] sm:pt-[70%] rounded-xl overflow-hidden">
-              <img className="size-full absolute top-0 start-0 object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl" src={"/blogImages/" + blog.meta.image} alt="Image Description" />
+              <img className="size-full absolute top-0 start-0 object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl" src={"./blogImages/" + blog.meta.image} alt="Image Description" />
             </div>
 
             <div className="mt-7">

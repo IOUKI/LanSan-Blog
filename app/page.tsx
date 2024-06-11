@@ -13,7 +13,7 @@ const Home = () => {
         <div className="lg:flex lg:items-center">
           <div className="flex justify-center">
             <div className="w-72 h-72 rounded-full overflow-hidden">
-              <img className="w-[110%] h-[110%] hover:w-[130%] hover:h-[130%] object-cover duration-500" src="/homeImages/mugShot.jpg" alt="mug shot" />
+              <img className="w-[110%] h-[110%] hover:w-[130%] hover:h-[130%] object-cover duration-500" src="./homeImages/mugShot.jpg" alt="mug shot" />
             </div>
           </div>
         </div>
@@ -87,24 +87,24 @@ const cards = [
     id: 1,
     content: <SkeletonOne />,
     className: "md:col-span-2",
-    thumbnail: "/homeImages/Itsuku-shima.jpg",
+    thumbnail: "./homeImages/Itsuku-shima.jpg",
   },
   {
     id: 2,
     content: <SkeletonTwo />,
     className: "col-span-1",
-    thumbnail: "/homeImages/kwc2023.jpg",
+    thumbnail: "./homeImages/kwc2023.jpg",
   },
   {
     id: 3,
     content: <SkeletonThree />,
     className: "col-span-1",
-    thumbnail: "/homeImages/taiwan-east-coast-night.jpg",
+    thumbnail: "./homeImages/taiwan-east-coast-night.jpg",
   },
   {
     id: 4,
     content: <SkeletonFour />,
     className: "md:col-span-2",
-    thumbnail: "/homeImages/taiwan-east-coast.jpg",
+    thumbnail: "./homeImages/taiwan-east-coast.jpg",
   },
 ];
